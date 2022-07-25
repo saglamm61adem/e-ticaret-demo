@@ -187,7 +187,7 @@ $(document).ready(function () {
   })
 })
 $('#tvslider').owlCarousel({
-  loop:true,
+  loop:false,
   margin:10,
   nav:true,
   dots:true,
@@ -210,7 +210,7 @@ $('#laptop').owlCarousel({
 }
 })
 $('#trend').owlCarousel({
-  loop:true,
+  loop:false,
   nav:true,
   responsive:{
       320:{
