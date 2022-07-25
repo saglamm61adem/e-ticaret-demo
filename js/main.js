@@ -218,3 +218,12 @@ $('#trend').owlCarousel({
       }
   }
 })
+$('#recomme').owlCarousel({
+  loop:false,
+  nav:true,
+  responsive:{
+      320:{
+          items:7
+      }
+  }
+})
