@@ -22,13 +22,13 @@ $(function () {
 $('#tabmenu1').owlCarousel({
   dots: true,
   loop: false,
-  margin:1,
+  margin: 1,
   responsive: {
     320: {
 
       dots: true,
       items: 2
-     
+
     },
     768: {
       dots: true,
@@ -44,7 +44,7 @@ $('#tabmenu1').owlCarousel({
 $('#tabmenu2').owlCarousel({
   dots: true,
   loop: false,
-  margin:1,
+  margin: 1,
 
 
   responsive: {
@@ -63,7 +63,7 @@ $('#tabmenu2').owlCarousel({
 $('#tabmenu3').owlCarousel({
   dots: true,
   loop: false,
-  margin:1,
+  margin: 1,
 
   responsive: {
     320: {
@@ -187,43 +187,78 @@ $(document).ready(function () {
   })
 })
 $('#tvslider').owlCarousel({
-  loop:false,
-  margin:10,
-  nav:true,
-  dots:true,
+  loop: false,
+  margin: 10,
+  nav: true,
+  dots: true,
   mouseDrag: false,
-  responsive:{
-      320:{
-          items:1
-      }
+  responsive: {
+    320: {
+      items: 1
+    }
   }
 })
 
 $('#laptop').owlCarousel({
-  
-  dots:true,
-  nav:true,
-  responsive:{
-    320:{
-        items:1
+
+  dots: true,
+  nav: true,
+  responsive: {
+    320: {
+      items: 1
     }
-}
+  }
 })
 $('#trend').owlCarousel({
-  loop:false,
-  nav:true,
-  responsive:{
-      320:{
-          items:1
-      }
+  loop: false,
+  nav: true,
+  responsive: {
+    320: {
+      items: 1
+    }
   }
 })
 $('#recomme').owlCarousel({
-  loop:false,
-  nav:true,
-  responsive:{
-      320:{
-          items:7
-      }
+  loop: false,
+  nav: true,
+  responsive: {
+    0: {
+      items: 2
+    },
+    575: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    1200: {
+      items: 6
+    },
+    1400: {
+      items: 7
+
+    }
+  }
+})
+
+$('#theend_owl').owlCarousel({
+  loop: true,
+  // margin:15,
+  dots: false,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    1000: {
+      items: 2
+    },
+    1200: {
+      items: 3
+    },
+    1400: {
+      items: 5
+
+    }
   }
 })

@@ -1158,7 +1158,7 @@ a:hover {
     background-image: url('/img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 567px;
+
     padding: 46px 0 23px;
 }
 
@@ -1176,10 +1176,11 @@ a:hover {
 
 }
 
+
 .televisiyon_text {
     border-bottom: 1px solid #ddd;
     position: relative;
-    padding-bottom: 50px;
+
     font-size: 21px;
     font-weight: 400;
     line-height: 35px;
@@ -1192,12 +1193,13 @@ a:hover {
     position: absolute;
     height: 3px;
     width: 36%;
-    bottom: 37px;
+    bottom: 0px;
 
 }
 
 #tvslider {
     position: static;
+
 }
 
 /* .televisiyon_text::after {
@@ -1212,7 +1214,7 @@ a:hover {
 } */
 
 #tvslider .owl-nav {
-
+    margin: 0;
     font-size: 29px;
     border: none;
     position: absolute;
@@ -1237,16 +1239,15 @@ a:hover {
 }
 
 #tvslider .slider_img img {
-    height: 110px;
-    width: 110px;
+
     padding-right: 15px;
 }
 
 #tvslider .slider_img {
-    width: 40%;
+    width: 45%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -1283,9 +1284,7 @@ a:hover {
     padding-top: 18px;
 }
 
-#tvslider .item {
-    padding-bottom: 40px;
-}
+
 
 #tvslider .row>* {
     margin: 0px;
@@ -1322,8 +1321,8 @@ a:hover {
     align-items: flex-start;
 }
 
-#tvslider item {
-    padding: 10px 20px;
+#tvslider .item {
+    padding: 40px 20px 10px 20px;
 
 }
 
@@ -1417,6 +1416,7 @@ a:hover {
 
 .laptop_main {
     position: relative;
+    padding-top: 10px;
 
 }
 
@@ -1426,7 +1426,7 @@ a:hover {
 }
 
 .laptop_img {
-    width: 45%;
+    width: 40%;
 }
 
 #laptop .owl-dots .owl-dot.active span {
@@ -1436,18 +1436,21 @@ a:hover {
 }
 
 .laptop_img img {
-    width: 80% !important;
+    width: 76% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .laptop_body {
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 
 .laptop_title {
-    padding-top: 30px;
+
     display: flex;
     flex-direction: column;
 }
@@ -1674,10 +1677,10 @@ a:hover {
 }
 
 #trend .owl-nav {
-    font-size: 29px;
+    font-size: 25px;
     border: none;
     position: absolute;
-    top: -55px;
+    top: 0px;
     right: 0;
     z-index: 99999999;
 }
@@ -1704,6 +1707,10 @@ a:hover {
     box-shadow: 0 0 6px 0 rgb(1 1 1 / 30%);
     z-index: 999999;
     background-color: white;
+}
+
+#trend {
+    position: static;
 }
 
 /* --------*****------best----**** */
@@ -1797,8 +1804,25 @@ a:hover {
 
 #bestcart .best_joy_5 {
     padding-top: 48px;
-    padding-bottom: 18px;
+    padding-bottom: 9px;
 
+}
+
+.social-icons_a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-icons_a .social-icons li {
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+.logox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
 }
 
 /* ------------------****------top_categories-------******** */
@@ -1885,23 +1909,414 @@ a:hover {
     background-color: #dddddd;
 }
 
+/* ---------recommendation--- */
+#recomme #bestcart:hover .tabmenu_cart_futur {
+
+    bottom: 0;
+}
+
+#recomme {
+    padding-top: 15px;
+    position: static;
+}
+
+#recomme .tab_cart {
+    min-height: 359px;
+}
+
+#recomme .owl-dots {
+    position: static;
+}
+
+#recomme .owl-dots .owl-dot.active span {
+    background: #e7c400 !important;
+    width: 20px;
+}
+
+#recomme .tabmenu_cart_alt_1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    max-height: 48px;
+}
+
+#recomme .tabmenu_cart_alt_2 {
+    padding-left: 20px;
+}
+
+#recomme .owl-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+
+}
+
+/* *-----------2-1------ */
+.iki-bir {
+    display: flex;
+}
+
+.iki-bir img {
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* -------------thendowl-------- */
+#theend_owl img {
+
+    width: 200px;
+    height: 60px;
+
+}
+
+.thend_owl- {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.thend_owl- a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+
+}
+
+#theend_owl .owl-nav.disabled {
+    display: block !important;
+}
+
+#theend_owl .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 26px;
+    z-index: 999;
+}
+
+#theend_owl .owl-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 26px;
+    z-index: 999;
+}
+
+#theend_owl .item:active a {
+    opacity: 1;
+}
+
+#theend_owl .item:hover a {
+    opacity: 1;
+}
+
+#theend_owl .owl-nav [class*='owl-']:hover {
+    background: 0 0;
+    color: #29323a;
+}
+
+/* -------------Futrrr--------------- */
+.futr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.futr_featur {
+    display: flex;
+    font-size: 1.429em;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.futr1_metin_başlık {
+    color: #0062bd;
+    font-weight: 700;
+    font-size: 1em;
+    display: block;
+    line-height: 1.2em;
+    padding-bottom: 5px;
+}
+
+.futr_cas {
+    font-size: 1.071em;
+    font-weight: 400;
+    line-height: 1.714;
+    color: #333e48
+}
+
+.star svg {
+    color: #e7c400;
+}
+
+.futr1 {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.futr1_img {
+    width: 30%;
+}
+
+.futr1_img img {
+    width: 100%;
+
+}
+
+.futr1_metin {
+    width: 70%;
+}
+
+.v3 {
+    width: 100%;
+
+    height: 100%;
+}
+
+.v3 img {
+    width: 100%;
+
+    height: 100%;
+
+}
+
+/* ------- sarufutr------- */
+.yellow-futr {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.air {
+    display: flex;
+    align-items: center;
+}
+
+.air svg {
+    font-size: 20px;
+}
+
+.yelleow-futr-ilk {
+    display: flex;
+    align-items: center;
+    padding: 0.734em 2em;
+}
+
+.yirmidolar {
+    padding-left: 20px;
+}
+
+.adres {
+    display: flex;
+    align-items: center;
+}
+
+.searchadres {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fff;
+    border: 0;
+    height: 41px;
+    padding: 0.734em 2em;
+    border-top-left-radius: 1.571em;
+    border-bottom-left-radius: 1.571em;
 
 
+}
+
+#search {
+    border: none;
+    outline: 0;
+}
+
+.buttonadres_ {
+    background-color: #333e48;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    border-width: 0;
+    font-size: 18px;
+    border-top-right-radius: 1.571em;
+    border-bottom-right-radius: 1.571em;
+}
+
+.buttonadres_:hover {
+    color: #fff;
+}
+
+/* ------------ */
+.kullaklık {
+    display: flex;
+    align-items: center;
+
+}
+
+.kulaklık_sol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: #e7c400;
+}
+
+.kulaklık_sag {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.footer-address {
+    padding-top: 20px;
+}
+
+.right_logo {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.right_logo_1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.right_logo_1 a {
+    padding-top: 5px;
+}
+
+.right_logo_1 h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.thend {
+    display: flex;
+    width: 100%;
+    position: relative;
+    line-height: 3em;
+    padding: 0.1em 0;
+    justify-content: space-between;
+
+}
 
 
+/* -------------mobil futr------- */
+.mobil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobil-logo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobil-kulaklık {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.mobil_collapse_1_1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mobil_collapse_1_1 .btn:focus {
+    outline: 1;
+    box-shadow: none;
+}
+
+.deneme {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.futr_featur span{
+    border-bottom: 4px solid yellow;
+}
+
+.collapse a {
+    padding-top: 10px;
+    color: #0062bd;
 
 
+}
 
 /* -------------------*****-------MEDYA---------******------ */
 @media (max-width: 575.98px) {
+    .sepet {
+        display: none;
+    }
+
+    .ikincislider_tab_menü .nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
     .slider_tum_icerik {
         padding-left: 0;
         margin-left: 0;
     }
 
+    .topcart_text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        color: #292929;
+
+    }
+
+    .sell::before {
+
+        width: 0px;
+        height: 0%;
+
+    }
+
+    .topcategories {
+        display: flex;
+        position: relative;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .topcart_text_alt {
         display: none;
+    }
+
+    .topcart {
+        width: 100%;
+    }
+
+    .smart {
+        width: 100%;
     }
 
     .sell {
@@ -1974,9 +2389,16 @@ a:hover {
         width: 287px;
     }
 
-    #trend .owl-nav {
-        margin-top: -735px;
+    .laptop_title {
+        padding: 0;
+    }
 
+    .slider_bas_alt {
+        padding-top: 10px;
+    }
+
+    .best_complate #bestcart {
+        min-height: 269px;
     }
 
 }
@@ -1996,6 +2418,18 @@ a:hover {
         max-width: 540px;
     }
 
+    .sell::before {
+
+        width: 0px;
+        height: 0%;
+
+    }
+
+    .sepet {
+        display: none;
+    }
+
+
     .topcart_text_alt {
         display: none;
     }
@@ -2004,11 +2438,85 @@ a:hover {
         display: none;
     }
 
+    .topcart_text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        color: #292929;
+
+    }
+
+    .laptop_title {
+        padding: 0;
+    }
+
+    .slider_bas_alt {
+        padding-top: 25px;
+    }
+
+    .abc {
+        display: none;
+    }
+
+    .abcd {
+        width: 50%;
+    }
+
+    .best_complate #bestcart {
+        min-height: 269px;
+    }
+
+    #bestcart .best_joy {
+        padding-bottom: 30px;
+    }
+
+    #bestcart .best_joy_5 {
+        padding-bottom: 30px;
+    }
+
+    #bestcart .tabmenu_cart_baslık {
+        padding-bottom: 15px;
+    }
+
+    .iki-bir img {
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+
+    #tvslider .slider_img {
+        width: 60%;
+    }
+
 }
+
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .container {
         max-width: 720px;
+    }
+
+    .sepet {
+        display: none;
+    }
+
+    .sell::before {
+
+        width: 0px;
+        height: 0%;
+
+    }
+
+    #tvslider .slider_img {
+        width: 60%;
+    }
+
+    .ab {
+        display: none;
+    }
+
+    .slider_bas_2 {
+        max-height: 30px;
     }
 
     .offcanvas-start {
@@ -2025,6 +2533,14 @@ a:hover {
 
     .slider_icerik_sol {
         margin: 0px;
+    }
+
+    .topcart_text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #292929;
+
     }
 
     .slider_tum_icerik .owl-carousel .item img {
@@ -2063,6 +2579,13 @@ a:hover {
         display: none;
     }
 
+    .laptop_title {
+        padding: 0;
+    }
+
+    .slider_bas_alt {
+        padding-top: 35px;
+    }
 
 }
 
@@ -2070,6 +2593,22 @@ a:hover {
     .container {
         max-width: 960px;
     }
+
+    .sepet {
+        display: none;
+    }
+
+    .sell::before {
+
+        width: 0px;
+        height: 0%;
+
+    }
+
+    .ab {
+        display: none;
+    }
+
 
     .offcanvas-start {
         width: 361px;
@@ -2081,6 +2620,14 @@ a:hover {
 
     .slider_backgraund {
         height: 344px;
+    }
+
+    .topcart_text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #292929;
+
     }
 
     .slider_icerik_sol {
@@ -2114,12 +2661,27 @@ a:hover {
         display: none;
     }
 
+    .best_complate #bestcart {
+        min-height: 269px;
+    }
+
+    .v3 {
+        width: 75%;
+
+        height: 75%;
+    }
 
 }
 
 @media (min-width: 1200px) and (max-width: 1479.98px) {
     .container {
         max-width: 1200px;
+    }
+
+    #bestcart .best_joy_5 {
+
+        padding-bottom: 76px;
+
     }
 
 
@@ -2129,4 +2691,6 @@ a:hover {
     .container {
         max-width: 1430px;
     }
+
+
 }
